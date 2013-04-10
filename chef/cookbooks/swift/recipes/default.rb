@@ -74,6 +74,8 @@ cookbook_file "/etc/default/rsync" do
 end
 
 cookbook_file "/home/swift/.swiftrc" do
+	owner "swift"
+	group "swift"
   source "swiftrc"
 end
 
